@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="386" id="KGk-i7-Jjw" customClass="CustomTableViewCell" customModule="autolayout" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="386"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfA-d2-Xk2" userLabel="Preferred View">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="385"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image1" translatesAutoresizingMaskIntoConstraints="NO" id="b1l-3B-fgN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="b1l-3B-fgN" secondAttribute="height" multiplier="16:9" id="cGO-kk-wAl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="いろはにほへとちりぬるをわかよたれそつねならむうゐのおくやまけふこえてあさきゆめみしゑひもせす色はにほへど散りぬるを我が世たれぞ常ならむ有為の奥山今日越えて浅き夢見じ酔ひもせず" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIS-Qd-YmD">
+                                <rect key="frame" x="8" y="188" width="304" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ZIS-Qd-YmD" secondAttribute="trailing" constant="8" id="Eyd-64-4Z8"/>
+                            <constraint firstAttribute="trailing" secondItem="b1l-3B-fgN" secondAttribute="trailing" id="VPG-R7-YOg"/>
+                            <constraint firstAttribute="bottom" secondItem="ZIS-Qd-YmD" secondAttribute="bottom" priority="250" constant="8" id="bE4-qE-1Zq"/>
+                            <constraint firstItem="ZIS-Qd-YmD" firstAttribute="leading" secondItem="zfA-d2-Xk2" secondAttribute="leading" constant="8" id="cel-5o-692"/>
+                            <constraint firstItem="b1l-3B-fgN" firstAttribute="leading" secondItem="zfA-d2-Xk2" secondAttribute="leading" id="fYC-ra-Ye2"/>
+                            <constraint firstAttribute="height" constant="385" placeholder="YES" id="l1T-ft-UXX"/>
+                            <constraint firstItem="b1l-3B-fgN" firstAttribute="top" secondItem="zfA-d2-Xk2" secondAttribute="top" id="s20-aS-y7y"/>
+                            <constraint firstItem="ZIS-Qd-YmD" firstAttribute="top" secondItem="b1l-3B-fgN" secondAttribute="bottom" constant="8" id="uXK-Tq-eLv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zfA-d2-Xk2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2qk-dt-urc"/>
+                    <constraint firstAttribute="trailing" secondItem="zfA-d2-Xk2" secondAttribute="trailing" id="DJe-SU-7NW"/>
+                    <constraint firstItem="zfA-d2-Xk2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="EPh-Xc-S6c"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelView" destination="ZIS-Qd-YmD" id="1QZ-xc-uZa"/>
+                <outlet property="preferredView" destination="zfA-d2-Xk2" id="5H6-bj-t4H"/>
+                <outlet property="thumbView" destination="b1l-3B-fgN" id="07P-yi-j1O"/>
+            </connections>
+            <point key="canvasLocation" x="261" y="626"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Image1" width="240" height="180"/>
+    </resources>
+</document>
