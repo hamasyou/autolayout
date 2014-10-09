@@ -60,5 +60,9 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         return cell.preferredView.bounds.height
     }
     
+    
+    func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
 }
 
