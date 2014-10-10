@@ -17,7 +17,7 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let images = [UIImage(named: "Image1"), UIImage(named: "Image2"), UIImage(named: "Image3")]
+        let images = [UIImage(named: "Image1")!, UIImage(named: "Image2")!, UIImage(named: "Image3")!]
         self.preferredViews = [UIView]()
         
         for image in images {

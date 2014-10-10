@@ -15,7 +15,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.registerNib(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "customCell")
+        tableView.registerNib(UINib(nibName: "CustomTableViewCell", bundle: nil)!, forCellReuseIdentifier: "customCell")
     }
 
     override func didReceiveMemoryWarning() {
